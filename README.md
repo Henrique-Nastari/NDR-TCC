@@ -22,7 +22,7 @@ flowchart TD
 ```
 
 O sistema foi treinado com o dataset **CICIDS2017** e opera em um pipeline de **Duas Camadas**:
-1. **Camada 1 (O Porteiro):** Modelo `LightGBM` otimizado para detecção ultrarrápida binária (`BENIGN` vs `ATTACK`).
+1. **Camada 1 (O Porteiro):** Modelo `XGBoost` otimizado para detecção ultrarrápida binária (`BENIGN` vs `ATTACK`).
 2. **Camada 2 (O Especialista):** Modelo `XGBoost` multiclasse responsável por assinar e classificar a ameaça em 12 categorias distintas (DDoS, PortScan, Botnet, Infiltration, etc).
 
 ## 🏗️ Fluxo de Funcionamento e Laboratório de Defesa
